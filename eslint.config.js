@@ -6,5 +6,10 @@ module.exports = defineConfig([
   expoConfig,
   {
     ignores: ['dist/*'],
+    extends: ['expo','prettier'],
+    plugins: ['prettier'],
+    rules: {
+      'prettier/prettier': 'error',
+    },
   },
 ]);
